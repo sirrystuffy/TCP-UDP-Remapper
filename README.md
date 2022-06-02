@@ -18,13 +18,13 @@ Supported commands: Your program should allow a user to upload and download text
 files, specify the remapping offset N, and quit the program. To this end, you will
 implement the following commands that the client can send to the server:
 - Copy a file from the client to the server (put), which takes as an input argument the
-full path to a file <file> on the client. Example execution:
-put <file>
+full path to a file [file] on the client. Example execution:
+put [file]
 - Copy a file from a server to a client (get), which also takes as an argument the full
-path to a file <file> on the server. Example execution:
-get <file>
+path to a file [file] on the server. Example execution:
+get [file]
 - Remap command that will allow the user to specify a remapping offset N and a
 target file in which to perform the remapping. Example execution:
-remap <int> <file>
-- Quit the program per user request
-quit
+remap [int] [file]
+- Quit the program per user request.
+Example execution: "quit"
